@@ -23,3 +23,17 @@ E:\Just Coding\2 - Senai\3 - Emerson\Visual Studio\appFunc\obj\Debug\appFunc.exe
 E:\Just Coding\2 - Senai\3 - Emerson\Visual Studio\appFunc\obj\Debug\appFunc.pdb
 E:\Just Coding\2 - Senai\3 - Emerson\Visual Studio\appFunc\obj\Debug\appFunc.frmPrincipal.resources
 D:\Just Coding\2 - Senai\3 - Emerson\Visual Studio\appFunc\obj\Debug\appFunc.frmPrincipal.resources
+C:\Users\Aluno\Source\Repos\PedroWatermann\appFunc\appFunc\bin\Debug\dbFuncionario.mdf
+C:\Users\Aluno\Source\Repos\PedroWatermann\appFunc\appFunc\bin\Debug\dbFuncionario_log.ldf
+C:\Users\Aluno\Source\Repos\PedroWatermann\appFunc\appFunc\bin\Debug\appFunc.exe.config
+C:\Users\Aluno\Source\Repos\PedroWatermann\appFunc\appFunc\bin\Debug\appFunc.exe
+C:\Users\Aluno\Source\Repos\PedroWatermann\appFunc\appFunc\bin\Debug\appFunc.pdb
+C:\Users\Aluno\Source\Repos\PedroWatermann\appFunc\appFunc\obj\Debug\appFunc.csproj.AssemblyReference.cache
+C:\Users\Aluno\Source\Repos\PedroWatermann\appFunc\appFunc\obj\Debug\appFunc.csproj.SuggestedBindingRedirects.cache
+C:\Users\Aluno\Source\Repos\PedroWatermann\appFunc\appFunc\obj\Debug\appFunc.frmPrincipal.resources
+C:\Users\Aluno\Source\Repos\PedroWatermann\appFunc\appFunc\obj\Debug\appFunc.Properties.Resources.resources
+C:\Users\Aluno\Source\Repos\PedroWatermann\appFunc\appFunc\obj\Debug\appFunc.csproj.GenerateResource.cache
+C:\Users\Aluno\Source\Repos\PedroWatermann\appFunc\appFunc\obj\Debug\appFunc.csproj.CoreCompileInputs.cache
+C:\Users\Aluno\Source\Repos\PedroWatermann\appFunc\appFunc\obj\Debug\appFunc.exe
+C:\Users\Aluno\Source\Repos\PedroWatermann\appFunc\appFunc\obj\Debug\appFunc.pdb
+C:\Users\Aluno\source\repos\PedroWatermann\appFunc\appFunc\obj\Debug\appFunc.frmAniversario.resources

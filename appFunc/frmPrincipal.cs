@@ -27,6 +27,9 @@ namespace appFunc
             {
                 pbxAniversario.Visible = false;
             }
+
+            txtId.Enabled = true;
+            txtId.ReadOnly = true;
         }
 
         public void limpaCampos(bool controle)
@@ -261,6 +264,12 @@ namespace appFunc
         {
             limpaCampos(true);
             editar(false);
+        }
+
+        private void pbxAniversario_Click(object sender, EventArgs e)
+        {
+            frmAniversario aniversario = new frmAniversario();
+            aniversario.Show();
         }
     }
 }

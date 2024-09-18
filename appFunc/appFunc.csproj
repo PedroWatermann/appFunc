@@ -76,6 +76,9 @@
     <Compile Include="Funcionario.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frmAniversario.resx">
+      <DependentUpon>frmAniversario.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmPrincipal.resx">
       <DependentUpon>frmPrincipal.cs</DependentUpon>
     </EmbeddedResource>
@@ -119,6 +122,8 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <DependentUpon>dbFuncionario.mdf</DependentUpon>
     </Content>
+    <None Include="Resources\ezgif.com-rotate.gif" />
+    <None Include="Resources\back-white-20.png" />
     <None Include="Resources\clear-white-20.png" />
     <None Include="Resources\exit-white-20.png" />
     <None Include="Resources\delete-white-20.png" />

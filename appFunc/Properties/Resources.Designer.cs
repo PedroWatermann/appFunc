@@ -63,6 +63,16 @@ namespace appFunc.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap back_white_20 {
+            get {
+                object obj = ResourceManager.GetObject("back_white_20", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap boloBranco {
             get {
                 object obj = ResourceManager.GetObject("boloBranco", resourceCulture);

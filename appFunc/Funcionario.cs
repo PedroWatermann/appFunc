@@ -20,7 +20,7 @@ namespace appFunc
         // Model =>
 
         // SqlConnection con = new SqlConnection("Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=\"E:\\Just Coding\\2 - Senai\\3 - Emerson\\Visual Studio\\appFunc\\dbFuncionario.mdf\";Integrated Security=True");
-        SqlConnection con = new SqlConnection("Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=\"D:\\Just Coding\\2 - Senai\\3 - Emerson\\Visual Studio\\appFunc\\dbFuncionario.mdf\";Integrated Security=True");
+        SqlConnection con = new SqlConnection("Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=C:\\Users\\Aluno\\source\\repos\\PedroWatermann\\appFunc\\appFunc\\dbFuncionario.mdf;Integrated Security=True");
 
         public List<Funcionario> ListaFuncionario()
 		{
@@ -256,7 +256,7 @@ namespace appFunc
 
 				if (data1.ToString() == dataN1.ToString() && data2.ToString() == dataN2.ToString()) // Compara se o dia e o mês são iguais
 				{
-					func.Id = (int)dr["Id"]; // Armazena o id do registr
+					func.Id = (int)dr["Id"]; // Armazena o id do registro
 					func.nome = dr["nome"].ToString(); // Armazena o nome do registro
 					func.turno = dr["turno"].ToString(); // Armazena o turno do registro
                     func.data_nascimento = dr["data_nascimento"].ToString(); // Armazena a data de nascimento do registro
@@ -266,6 +266,48 @@ namespace appFunc
 			}
 			dr.Close();
 			con.Close();
+            return li;
+        }
+
+		public List<Funcionario> AniversariantesMes()
+		{
+            List<Funcionario> li = new List<Funcionario>();
+
+            string sql = "SELECT * FROM Funcionario";
+
+            if (con.State == ConnectionState.Open)
+            {
+                con.Close();
+            }
+            con.Open();
+
+            SqlCommand cmd = new SqlCommand(sql, con);
+            SqlDataReader dr = cmd.ExecuteReader();
+
+            var dataNiver = DateTime.Now.ToString("dd/MM/yyyy"); // Armazena em dataNiver a data de hoje
+            // string data1 = dataNiver.Substring(0, 2); // Armazena o dia de hoje
+            string data2 = dataNiver.Substring(3, 2); // Armazena o mês em que estamos
+
+            while (dr.Read()) // Este laço interage com o data reader, que armazenou todas as informações do DB em dr
+            {
+                Funcionario func = new Funcionario(); // Instancia o model (linhas iniciais)
+
+                var dataNasc = dr["data_nascimento"].ToString(); // Armazena em dataNasc a data do registro do DB
+                string dataN1 = dataNasc.Substring(0, 2); // Armazena o dia de nascimento do registro
+                string dataN2 = dataNasc.Substring(3, 2); // Armazena o mês de nascimento do registro
+
+                if (/*data1.ToString() == dataN1.ToString() &&*/ data2.ToString() == dataN2.ToString()) // Compara se o dia e o mês são iguais (alterado apenas para o mês)
+                {
+                    func.Id = (int)dr["Id"]; // Armazena o id do registro
+                    func.nome = dr["nome"].ToString(); // Armazena o nome do registro
+                    func.turno = dr["turno"].ToString(); // Armazena o turno do registro
+                    func.data_nascimento = dr["data_nascimento"].ToString(); // Armazena a data de nascimento do registro
+                    func.matricula = dr["matricula"].ToString(); // Armazena a matrícula do registro
+                    li.Add(func); // Adiciona todas as informações coletadas em func à lista (para ser mostrada para o usuário final)
+                }
+            }
+            dr.Close();
+            con.Close();
             return li;
         }
 	}

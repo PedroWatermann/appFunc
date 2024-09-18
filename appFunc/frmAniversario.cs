@@ -16,5 +16,18 @@ namespace appFunc
         {
             InitializeComponent();
         }
+
+        private void frmAniversario_Load(object sender, EventArgs e)
+        {
+            Funcionario funcionario = new Funcionario();
+            // List<Funcionario> func = funcionario.ListaAniversariantes();
+            List<Funcionario> func = funcionario.AniversariantesMes();
+            dgvAnversariantes.DataSource = func;
+        }
+
+        private void btnVoltar_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }
