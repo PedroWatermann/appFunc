@@ -19,10 +19,10 @@ namespace appFunc
 		public string matricula { get; set; }
         // Model =>
 
-        // SqlConnection con = new SqlConnection("Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=\"E:\\Just Coding\\2 - Senai\\3 - Emerson\\Visual Studio\\appFunc\\dbFuncionario.mdf\";Integrated Security=True");
-        SqlConnection con = new SqlConnection("Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=C:\\Users\\Aluno\\source\\repos\\PedroWatermann\\appFunc\\appFunc\\dbFuncionario.mdf;Integrated Security=True");
+        	// SqlConnection con = new SqlConnection("Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=\"E:\\Just Coding\\2 - Senai\\3 - Emerson\\Visual Studio\\appFunc\\dbFuncionario.mdf\";Integrated Security=True");
+        	SqlConnection con = new SqlConnection("Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=C:\\Users\\Aluno\\source\\repos\\PedroWatermann\\appFunc\\appFunc\\dbFuncionario.mdf;Integrated Security=True");
 
-        public List<Funcionario> ListaFuncionario()
+        	public List<Funcionario> ListaFuncionario()
 		{
 			List<Funcionario> li = new List<Funcionario>();
 
